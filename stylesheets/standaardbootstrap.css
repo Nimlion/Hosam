@@ -1,0 +1,34 @@
+.row2 {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-header {
+    color: aqua;
+    text-align: center;
+}
+body {
+    background-color: whitesmoke;
+}
+.glyphicon glyphicon-align-justify{
+    text-align: left;
+}
+btnmenu {
+    color: skyblue;
+    background-color: antiquewhite;
+    border-bottom-color: aqua;
+    border-color: gray;
+    text-align: left;
+    border-radius: 20px;
+    font-size: 200px;
+}
+.aanmelden {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.checkbox {
+    background-color: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    border-width: thick;
+}
