@@ -183,9 +183,11 @@
         <source src="muziek.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio></center>
-    <br><br>
+    <a href="javascript:window.print();">Pagina printen</a>
+    <script type="text/javascript">showDate();</script>
+    <br><br><center><i><b>
     <script type="text/javascript">writeRandomQuote();</script>
-      <br><br><br>
+    <br>ANd never forget 22:22<br>Ltr!<br></b></i></center>
       
       
 
@@ -197,12 +199,43 @@
 </html>
 
 <script>
+
+   if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+     
+       if (document.cookie.indexOf("iphone_redirect=false") == -1) {
+           alert("jij gebruikt een iphone!");
+       }
+     else {
+       alert("jij gebruikt geen android!";
+       }
+
+   }
+
+  function showDate() {
+    var d = new Date();
+    var curr_date = d.getDate();
+    var curr_month = d.getMonth() + 1; //months are zero based
+    var curr_year = d.getFullYear();
+    document.write(curr_date + "-" + curr_month + "-" + curr_year);
+  }
+
   writeRandomQuote = function () {
     var quotes = new Array();
-    quotes[0] = "Action is the real measure of intelligence.";
-    quotes[1] = "Baseball has the great advantage over cricket of being sooner ended.";
-    quotes[2] = "Every goal, every action, every thought, every feeling one experiences, whether it be consciously or unconsciously known, is an attempt to increase one’s level of peace of mind.";
-    quotes[3] = "A good head and a good heart are always a formidable combination.";
+    quotes[0] = "Feestbeesten for life";
+    quotes[1] = "Leeft Dionne nog?";
+    quotes[2] = "Pinda!!";
+    quotes[3] = "Michael nerd";
+    quotes[4] = "Fissa!";
+    quotes[5] = "Ik ben niet dronken";
+    quotes[4] = "wie komt skype?";
+    quotes[4] = "grappige foto inbound..";
+    quotes[4] = "22:22";
+    quotes[4] = "Harambe";
+    quotes[4] = "where did we find Damian?";
+    quotes[4] = "Bruno beer";
+    quotes[4] = "Damian Pinda";
+    quotes[4] = " Scapino!!";
+    
     var rand = Math.floor(Math.random()*quotes.length);
     document.write(quotes[rand]);
   }
