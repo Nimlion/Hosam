@@ -182,15 +182,13 @@
         <source src="horse.ogg" type="audio/ogg" autoplay>
         <source src="muziek.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
-    </audio></center>
+    </audio>
     <a href="javascript:window.print();">Pagina printen</a>
-    <div onmouseover="ShowDate()" onmouseout="NoDate()">De datum is: <span id="datum"></span></div>
+    <script type="text/javascript">showDate();</script></center>
     <br><br><center><i><b>
-    <script type="text/javascript">writeRandomQuote();</script>
+    <i><script type="text/javascript">writeRandomQuote();</script></i>
     <br>ANd never forget 22:22<br>Ltr!<br></b></i></center>
       
-      
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -199,7 +197,6 @@
 </html>
 
 <script>
-
    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
      
        if (document.cookie.indexOf("iphone_redirect=false") == -1) {
@@ -209,8 +206,11 @@
    }
 
   function showDate() {
-    document.getElementById("datum").innerHTML
-            =Date();
+    var d = new Date();
+    var curr_date = d.getDate();
+    var curr_month = d.getMonth() + 1; //months are zero based
+    var curr_year = d.getFullYear();
+    document.write(curr_date + "-" + curr_month + "-" + curr_year);
   }
 
   writeRandomQuote = function () {
