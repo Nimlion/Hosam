@@ -32,3 +32,7 @@ btnmenu {
     border-radius: 10px;
     border-width: thick;
 }
+img {
+    width: 50px;
+    height: 50px;
+}
