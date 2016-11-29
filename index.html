@@ -4,6 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <style>
+        html {
+            background-color: lightseagreen;
+        }
+        #portfolio {
+            border: 2px dashed gray;
+            border-radius: 5px;
+        }
+        #alles{
+            border-radius: 5px;
+            border: 1px dashed yellow;
+        }
+    </style>
+	<style>
     /* W3.CSS 2.83 Nov 2016 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
@@ -381,7 +394,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 </ul>
 
 <!-- Page content -->
-<div class="w3-content w3-padding-xlarge w3-margin-top" id="portfolio">
+<div class="w3-content w3-padding-xlarge w3-margin-top" id="alles">
 
   <!-- Images (Portfolio) -->
   <img src="images/admin.png" alt="Ocean" class="w3-image" width="1000" height="500">
@@ -395,46 +408,59 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
     <h3 class="w3-center">CV</h3>
     <hr>
     <p><b>Persoonlijke Gegevens</b><br>
-<b>Naam:	</b>		               Hosam Darwish<br>
-<b>Adres:		</b>	               Mol 6<br>
-<b>woonplaats:	</b>	              	1422 WT Uithoorn<br>
-<b>Telefoonnummer:	</b>     	0630318886<br>
-<b>E-mail: 	</b>		              hd.006@hotmail.com<br>
-<b>Geboortedatum:</b>	       	20-08-1998<br>
-<b>Nationaliteit:	</b>	              	Nederlandse<br>
-<br>
-<b>Opleiding </b>		<br>
-2015-heden	MBO Amstelland Amstelveen niv.4: Applicatieontwikkelaar in opleiding, 2e van de 3 jaar.<br>
-2011-2015	MAVO Natuur & Techniek (Amstelveen College)<br>
- 	<b>Vakkenpakket Mavo:</b> Nederlands, Engels, Natuurkunde, Wiskunde, Biologie, Geschiedenis, Rekenen.<br>
-<b>werk ervaring</b><br>
-Van 25 juli 2015 tot 14 september 2016 werkzaam bij JUMBO Uithoorn als vulploegmedewerker, daarbij moest ik vooral artikelen van het magazijn<br> vullen in de winkel.<br>
-<b>Stage ervaring</b><br>
-<b>Maatschappelijke stage:</b>	Ik heb een week in het Hoge Heem gewerkt in Uithoorn om eten te bezorgen naar de bewoners en te helpen in het restaurant.<br> Ze vonden mij gemotiveerd en behulpzaam.
-Overig					   <br>
-	lezen	   spreken     	schrijven<br>
-Nederlands       	vloeiend      	vloeiend   	vloeiend<br>
-Engels	vloeiend               	goed            	goed   <br>
-<br>
-<b>Competenties	</b>
-	Gemotiveerd, zelfstandig, teamspeler, sociaal, creatief, commercieel inzicht en betrokken.<br>
-<b>Computer technieken	</b>	<br>
-Kennis van: HTML5, CSS en PHP.<br>
-Basiskennis van: Java en C#.
-Word, Power Point, Access, Excel en ik heb mijn typdiploma.<br>
-<b>Hobby&#39;s</b>		<br>
-				Gamen, zwemmen, koken, bakken, judo,  sportschool en coderen.<br>
-<b>Referenties</b><br>
-				Jumbo afdelingsleider: Mark van Velle: 0638232356 M.velle@live.nl<br>
-				Hoge Heem Manager: Danielle Hengeveld 0297519520 heem@live.nl<br>
-</p>
+        <b>Naam:	</b>		               Hosam Darwish<br>
+        <b>Adres:		</b>	               Mol 6<br>
+        <b>woonplaats:	</b>	              	1422 WT Uithoorn<br>
+        <b>Telefoonnummer:	</b>     	0630318886<br>
+        <b>E-mail: 	</b>		              hd.006@hotmail.com<br>
+        <b>Geboortedatum:</b>	       	20-08-1998<br>
+        <b>Nationaliteit:	</b>	              	Nederlandse<br>
+        <br>
+        <b>Opleiding </b>		<br>
+        2015-heden	MBO Amstelland Amstelveen niv.4: Applicatieontwikkelaar in opleiding, 2e van de 3 jaar.<br>
+        2011-2015	MAVO Natuur &#38; Techniek (Amstelveen College)<br>
+        <b>Vakkenpakket Mavo:</b><br> Nederlands, Engels, Natuurkunde, Wiskunde, Biologie, Geschiedenis, Rekenen.<br>
+        <b>werk ervaring:</b><br>
+        Van 25 juli 2015 tot 14 september 2016 werkzaam bij JUMBO Uithoorn als vulploegmedewerker, daarbij moest ik vooral artikelen van het magazijn vullen in de winkel.<br>
+        <b>Stage ervaring</b><br>	Ik heb een week in het Hoge Heem gewerkt in Uithoorn om eten te bezorgen naar de bewoners en te helpen in het restaurant. Ze vonden mij gemotiveerd en behulpzaam.<br>
+        <b>Overig</b>
+              <table>
+          <tr>
+            <th></th>
+            <th>Lezen</th>
+            <th>spreken</th> 
+            <th>schrijven</th>
+          </tr>
+          <tr>
+            <td>Nederlands</td>
+            <td>vloeiend</td>
+            <td>vloeiend</td>
+            <td>vloeiend</td>
+          </tr>
+          <tr>
+            <td>Engels</td>
+            <td>vloeiend</td>
+            <td>goed</td>
+            <td>goed</td>
+          </tr>
+        </table>
+        <br>
+        <b>Competenties	</b><br>
+            Gemotiveerd, zelfstandig, teamspeler, sociaal, creatief, commercieel inzicht en betrokken.<br>
+        <b>Computer technieken	</b>	<br>
+        Kennis van: HTML5, CSS en PHP.<br>
+        Basiskennis van: Java en C#.
+        Word, Power Point, Access, Excel en ik heb mijn typdiploma.<br>
+        <b>Hobby&#39;s</b>		<br>
+                        Gamen, zwemmen, koken, bakken, judo,  sportschool en coderen.<br>
+        <b>Referenties</b><br>
+        Jumbo afdelingsleider: Mark van Velle: 0638232356 M.velle@live.nl<br>
+        Hoge Heem Manager: Danielle Hengeveld 0297519520 heem@live.nl<br>
+      </p>
 
     
 
   </div>
-
-<!-- End page content -->
-</div>
 
 </body>
 </html>
