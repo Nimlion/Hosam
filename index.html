@@ -1,374 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<title>Hosam Darwish</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <style>
-    body {
-        font-family: 'Autour One';
-    }
-    div.img {
-        margin: 5px;
-        border: 1px solid #ccc;
-        float: left;
-        width: 180px;
-    }
-
-    div.img:hover {
-        border: 1px solid #777;
-    }
-
-    div.img img {
-        width: 100%;
-        height: 100px;
-    }
-
-    div.desc {
-        padding: 15px;
-        text-align: center;
-    }
+    
     </style>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Hosam Darwish</title>
+<body>
 
-    <!-- Bootstrap -->
-    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link href="stylesheets/sidebar.css" rel="stylesheet">
-    <link href="stylesheets/personal.css" rel="stylesheet">
-    <link href="stylesheets/modal.css" rel="stylesheet">
-    <link href='//fonts.googleapis.com/css?family=Autour One' rel='stylesheet'>
-    <link rel="icon" href="img/teddy.ico" type="img/logo.ico"/>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-      
-      <div id="wrapper">
-        <div class="overlay"></div>
-    
-        <!-- Sidebar -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-            <ul class="nav sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="JPstart.html">
-                       Hosam
-                    </a>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Websites <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">mijn gemaakte websites</li>
-                    <li><a href="#">halloween</a></li>
-                    <li><a href="#">achtergrond</a></li>
-                    <li><a href="#">css beweging</a></li>
-                    <li><a href="#">svg-motion</a></li>
-                    <li><a href="#">lijn</a></li>
-                  </ul>
-                </li>
-                <li>
-                    <a href="#">game lijst</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a target="_blank" href="#">Twitter</a>
-                </li>
-                <li>
-                    <a target="_blank" href="#">Instagram</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
-                <span class="hamb-top"></span>
-    			<span class="hamb-middle"></span>
-				<span class="hamb-bottom"></span>
-            </button>
-            <div id="frontpage" class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                    <center><br><div class="page-header" id="kopje"><h2>Welkom bij de website van Hosam Darwish <small id="small">Gamer, programmeur</small></h2></div> 
-                    </center>
-                    <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-      <div class="modal-content">
-
-        <div class="mySlides">
-          <div class="numbertext">1 / 8</div>
-            <img id="showing" src="images/start.png" height="60%" style="width:auto">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">2 / 8</div>
-            <img id="showing" src="images/menu.png" height="60%" style="width:auto">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">3 / 8</div>
-            <img id="showing" src="images/start.png" height="60%" style="width:auto">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">4 / 8</div>
-            <img id="showing" src="images/start.png" height="60%" style="width:auto">
-        </div>
-          
-        <div class="mySlides">
-          <div class="numbertext">5 / 8</div>
-            <img id="showing" src="images/start.png" height="60%" style="width:auto">
-        </div>
-          
-        <div class="mySlides">
-          <div class="numbertext">6 / 8</div>
-            <img id="showing" src="images/start.png" height="60%" style="width:auto">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">7 / 8</div>
-            <img id="showing" src="images/start.png" height="60%" style="width:auto">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">8 / 8</div>
-            <img id="showing" src="images/start.png" height="60%" style="width:auto">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <div class="caption-container" height="0px">
-          <p id="caption"></p>
-        </div>
-
-        <div class="column">
-          <img class="demo" src="images/start.png" onclick="currentSlide(1)" alt="Assassins Creed 4: Black Flag">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="images/menu.png" onclick="currentSlide(2)" alt="Just Cause 3">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="images/start.png" onclick="currentSlide(3)" alt="Tom Clansy's: The Division">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="images/start.png" onclick="currentSlide(4)" alt="Tom Clansy's: Ghost Recon Wildlands">
-        </div>
-          
-        <div class="column">
-          <img class="demo" src="images/start.png" onclick="currentSlide(5)" alt="Trackmania Turbo">
-        </div>
-          
-        <div class="column">
-          <img class="demo" src="images/start.png" onclick="currentSlide(6)" alt="Need for Speed Rivals">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="images/start.png" onclick="currentSlide(7)" alt="Uncharted 4: A Thief's End">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="images/start.png" onclick="currentSlide(8)" alt="Metal Gear Solid 5: The Phantom Pain">
-        </div>
-          
-      </div>
-    </div>
-    
-    <table>
-    <tr>
-        <th>
-            <img class="gamesimg" src="images/start.png" onclick="openModal();currentSlide(1)" alt="Smiley face" height="40%" width="65%">
-        </th>
-        <th>
-            <img class="gamesimg" src="images/start.png" onclick="openModal();currentSlide(2)" alt="Smiley face" height="40%" width="65%">
-        </th>
-        <th>
-            <img class="gamesimg" src="images/start.png" onclick="openModal();currentSlide(3)" alt="Smiley face" height="40%" width="65%">
-        </th>
-        <th>
-            <img class="gamesimg" src="images/start.png" onclick="openModal();currentSlide(4)" alt="Smiley face" height="40%" width="65%">
-        </th>
-         <th>
-            <img class="gamesimg" src="images/start.png" onclick="openModal();currentSlide(5)" alt="Smiley face" height="40%" width="65%">
-        </th>
-    </tr>
-    <tr>
-        <th>
-            <h5>Assassins Creed: Black Flag</h5>
-        </th>
-        <th>
-            <h5>Just Cause 3</h5>
-        </th>
-        <th>
-            <h5>The Division</h5>
-        </th>
-        <th>
-            <h5>Ghost Recon Wildlands</h5>
-        </th>
-         <th>
-            <h5>Trackmania Turbo</h5>
-        </th>
-    </tr>
-    <tr>
-        <th>
-            <img class="gamesimg" src="images/start.png" alt="Smiley face" height="40%" width="65%" data-lightbox="roadtrip">
-        </th>
-        <th>
-            <img class="gamesimg" src="images/start.png" alt="Smiley face" height="40%" width="65%" data-lightbox="roadtrip">
-        </th>
-        <th>
-            <img class="gamesimg" src="images/start.png" alt="Smiley face" height="40%" width="65%" data-lightbox="roadtrip">
-        </th>
-        <th>
-            <img class="gamesimg" src="images/start.png" alt="Smiley face" height="40%" width="65%" data-lightbox="roadtrip">
-        </th>
-         <th>
-            <img class="gamesimg" src="images/start.png" alt="Smiley face" height="40%" width="65%" data-lightbox="roadtrip">
-        </th>
-    </tr>
-        <tr>
-        <th>
-            <h5>Need for Speed Rivals</h5>
-        </th>
-        <th>
-            <h5>Uncharted 4: A Thief's End</h5>
-        </th>
-        <th>
-            <h5>MGS 5: The Phantom Pain</h5>
-        </th>
-        <th>
-            <h5>Grand Theft Auto 5</h5>
-        </th>
-         <th>
-            <h5>Battlefield 1</h5>
-        </th>
-    </tr>
-</table>
-<div id="bg">
-</div>
-<script src="../js/lightbox-plus-jquery.min.js"></script>
-<script src="../js/lightbox-plus-jquery.js"></script>
-</body>
-<footer>
-
-</footer>
-</html>
-
-<script>
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function () {
-  var trigger = $('.hamburger'),
-      overlay = $('.overlay'),
-     isClosed = false;
-
-    trigger.click(function () {
-      hamburger_cross();      
-    });
-
-    function hamburger_cross() {
-
-      if (isClosed == true) {          
-        overlay.hide();
-        trigger.removeClass('is-open');
-        trigger.addClass('is-closed');
-        isClosed = false;
-      } else {   
-        overlay.show();
-        trigger.removeClass('is-closed');
-        trigger.addClass('is-open');
-        isClosed = true;
-      }
-  }
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1500px">
+  <img class="w3-image" src="images/photographer.jpg" alt="Me" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-xlarge w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Hosam Darwish</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">Hosam Darwish</h5>
+    <h3 class="w3-hide-medium w3-hide-small">Programmeur</h3>
+  </div>
   
-  $('[data-toggle="offcanvas"]').click(function () {
-        $('#wrapper').toggleClass('toggled');
-  });  
-});
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <ul class="w3-navbar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <li><a href="#">Home</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
 
-var slideIndex = 0;
-carousel();
+<!-- Navbar on small screens -->
+<ul class="w3-navbar w3-light-grey w3-hide-large w3-hide-medium">
+  <li><a href="#">Home</a></li>
+  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1} 
-    x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 5000); // Change image every 2 seconds
-}
+<!-- Page content -->
+<div class="w3-content w3-padding-xlarge w3-margin-top" id="portfolio">
+
+  <!-- Images (Portfolio) -->
+  <img src="images/admin.png" alt="Ocean" class="w3-image" width="1000" height="500">
+  <img src="images/standpunten.png" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="images/start.png" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="images/agenda.png" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="images/contact.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+
+  <!-- Contact -->
+  <div class="w3-light-grey w3-padding-xlarge w3-padding-32 w3-margin-top" id="contact">
+    <h3 class="w3-center">CV</h3>
+    <hr>
+    <p><b>Persoonlijke Gegevens</b><br>
+<b>Naam:	</b>		               Hosam Darwish<br>
+<b>Adres:		</b>	               Mol 6<br>
+<b>woonplaats:	</b>	              	1422 WT Uithoorn<br>
+<b>Telefoonnummer:	</b>     	0630318886<br>
+<b>E-mail: 	</b>		              hd.006@hotmail.com<br>
+<b>Geboortedatum:</b>	       	20-08-1998<br>
+<b>Nationaliteit:	</b>	              	Nederlandse<br>
+<br>
+<b>Opleiding </b>		<br>
+2015-heden	MBO Amstelland Amstelveen niv.4: Applicatieontwikkelaar in opleiding, 2e van de 3 jaar.<br>
+2011-2015	MAVO Natuur & Techniek (Amstelveen College)<br>
+ 	<b>Vakkenpakket Mavo:</b> Nederlands, Engels, Natuurkunde, Wiskunde, Biologie, Geschiedenis, Rekenen.<br>
+<b>werk ervaring</b><br>
+Van 25 juli 2015 tot 14 september 2016 werkzaam bij JUMBO Uithoorn als vulploegmedewerker, daarbij moest ik vooral artikelen van het magazijn<br> vullen in de winkel.<br>
+<b>Stage ervaring</b><br>
+<b>Maatschappelijke stage:</b>	Ik heb een week in het Hoge Heem gewerkt in Uithoorn om eten te bezorgen naar de bewoners en te helpen in het restaurant.<br> Ze vonden mij gemotiveerd en behulpzaam.
+Overig					   <br>
+	lezen	   spreken     	schrijven<br>
+Nederlands       	vloeiend      	vloeiend   	vloeiend<br>
+Engels	vloeiend               	goed            	goed   <br>
+<br>
+<b>Competenties	</b>
+	Gemotiveerd, zelfstandig, teamspeler, sociaal, creatief, commercieel inzicht en betrokken.<br>
+<b>Computer technieken	</b>	<br>
+Kennis van: HTML5, CSS en PHP.<br>
+Basiskennis van: Java en C#.
+Word, Power Point, Access, Excel en ik heb mijn typdiploma.<br>
+<b>Hobby&#39;s</b>		<br>
+				Gamen, zwemmen, koken, bakken, judo,  sportschool en coderen.<br>
+<b>Referenties</b><br>
+				Jumbo afdelingsleider: Mark van Velle: 0638232356 M.velle@live.nl<br>
+				Hoge Heem Manager: Danielle Hengeveld 0297519520 heem@live.nl<br>
+</p>
+
     
-// Get the modal
-var modal = document.getElementById('myModal');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+  </div>
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+<!-- End page content -->
+</div>
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg2');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
+</body>
+</html>
