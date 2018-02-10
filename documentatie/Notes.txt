@@ -1,0 +1,16 @@
+TO DO:
+<!- Skills kleuren altijd zichtbaar maken.
+<!- Copyright icon als play en pause button maken.
+
+- Loading tot website is geladen
+- Testen op mobiel
+- Op firefox testen
+- Testen op mobiel
+- Testen op internet explorer
+- Testen op firefox
+- Testen op Chrome
+- 4K ready maken
+- Testen op internet explorer
+- Testen op firefox
+- Testen op Chrome
+- Comments verwijderen

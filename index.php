@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--  Meta tags  -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#333">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <!--  Titel, icon en jQuery  -->
+    <title>Hosam Darwish</title>
+    <link rel="icon" href="img/icon.ico" type="img/icon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Droid+Serif|Inknut+Antiqua|Lobster|Righteous" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/functions.js"></script>
+      
+    <!--  Stylesheets  -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/mijzelf.css" rel="stylesheet">
+  </head>
+  <body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"></button>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a onclick="closeNav()" href="index.php">Home</a>
+        <a onclick="closeNav()" href="#CoverBg">Start</a>
+        <a onclick="closeNav()" href="#Mezelf">About</a>
+        <a onclick="closeNav()" href="#Vakantie">Vacation</a>
+        <a onclick="closeNav()" href="#Gallerij">Gallery</a>
+        <a onclick="closeNav()" href="#Skills">Skills</a>
+        <a onclick="closeNav()" href="#Contact">Contact</a>
+      </div>
+    </div>
+    <div id="CoverBg">
+        <ul id="Navbar">
+            <li><a href="#">Icon</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a id="nav1">Start</a></li>
+            <li><a id="nav2">About</a></li>
+            <li><a id="nav3">Vacation</a></li>
+            <li><a id="nav4">Gallery</a></li>
+            <li><a id="nav5">Knowledge</a></li>
+            <li><a id="nav6">Contact</a></li>
+            <li><a id="menuLink" href="#"onclick="openNav()"><i class="fa fa-reorder"></i></a><li>                                         <!--------- -->
+        </ul>
+        <h4 class="MainText">Hosam Darwish</h4>
+        <a  title="doorlezen"><img src="img/arrow_down.png" id="down-arrow"></a>
+    </div>
+    <div class="wrapper">
+<!--          INTRO TEKST-->
+        <h1 id="Mezelf" class="kopTekst">About myself</h1>
+        <p class="content"><img src="img/profielfoto.png" alt="profielfoto" class="profielFoto">I am Hosam Darwish, I am 19 years old. I was born in Amsterdam, and raised in Uithoorn too the size of around 180 centimeters. My mom is a pure Dutchwoman and my father is egyptian, I also have a older sister and a small red cat. My first job was on my 16th as a supermarket employee at Jumbo, but eventually I left. After that I had an intership at <a href="https://netsquare.nl/" title="stagebedrijf" class="dottedLink" target="_blank">Netsquare</a> and <a href="https://www.noticebrandedmedia.com/" title="stagebedrijf" class="dottedLink" target="_blank">Notice Branded Media</a>. My hobby's are programming, swimming, gaming, cooking, baking, going to the gym and Judo. But when I got my 2th Kyu (blue) I decided to quit after 8 years of Judo. But besides Judo I also have a passion for design, I never really did something with it except for some Paint.net "masterpieces". I do however would like to learn Photoshop and buy a good camera so I can make beautiful cinematics and pictures. That's why I certainly want to do something later where I am the brain behind something so I can create something from scratch. That's also where I get my energy from and what I am most passionate about. I also have an MBO certificate and I am planning to do a HBO study in Software engineering at the Hogeschool van Amsterdam.</p> 
+        
+<!--        VAKANTIE BESTEMMINGEN-->
+        <h1 id="Vakantie"class="kopTekst klein">Vacation destinations</h1>
+        <div id="Vakanties">
+            <div class="row">
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Dubai" title="Dubai" src="img/bestemmingen/dubai.jpg">	
+                      <div class="photo-overlay">
+                          <h3>Dubai</h3>
+                          <p>The Rich and luxery life</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Alexandrië" title="Alexandrië" src="img/bestemmingen/alexandria.jpg">	
+                      <div class="photo-overlay">
+                          <h3>Alexandrië</h3>
+                          <p>The beach city in Egypt</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Havana" title="Havana" src="img/bestemmingen/havana.jpg">	
+                      <div class="photo-overlay">
+                          <h3>Havana</h3>
+                          <p>The old culture of pirates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Mexico" title="Mexico" src="img/bestemmingen/Mexico.jpg">	
+                      <div class="photo-overlay">
+                          <h3>Mexico-Stad</h3>
+                          <p>The city with culture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="California" title="California" src="img/bestemmingen/California.jpg">
+                      <div class="photo-overlay">
+                          <h3>Los Angeles</h3>
+                          <p>Hollywood!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="New York" title="New York" src="img/bestemmingen/NewYork.jpg">	
+                      <div class="photo-overlay">
+                          <h3>New York</h3>
+                          <p>Times square etc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Monaco" title="Monaco"  src="img/bestemmingen/monaco.jpg">
+                      <div class="photo-overlay">
+                          <h3>Monaco</h3>
+                          <p>Looking at all luxery and boats</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Venice" title="Venetië" src="img/bestemmingen/venice.jpg">
+                      <div class="photo-overlay">
+                          <h3>Venetië</h3>
+                          <p>Taking a trip down the canels</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Madrid" title="Madrid" src="img/bestemmingen/madrid.jpg">
+                      <div class="photo-overlay">
+                          <h3>Madrid</h3>
+                          <p>Just taking a look</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Dublin" title="Dublin" src="img/bestemmingen/dublin.jpg">
+                      <div class="photo-overlay">
+                          <h3>Dublin</h3>
+                          <p>Ireland!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Wellington" title="Wellington" src="img/bestemmingen/Wellington.jpg">
+                      <div class="photo-overlay">
+                          <h3>Wellington</h3>
+                          <p>Seeing the old culture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Bahama's" title="Bahama's" src="img/bestemmingen/bahama.jpg">
+                      <div class="photo-overlay">
+                          <h3>Bahama's</h3>
+                          <p>Chilling on the beach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Paris" title="Paris" src="img/bestemmingen/paris.jpg">
+                      <div class="photo-overlay">
+                          <h3>Paris</h3>
+                          <p>Eiffel tower!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Buenos Aires" title="Buenos Aires" src="img/bestemmingen/buenos-aires.jpg">
+                      <div class="photo-overlay">
+                          <h3>Buenos Aires</h3>
+                          <p>Knowing what it is like over there</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Toscane" title="Toscane" src="img/bestemmingen/toscane.jpg">
+                      <div class="photo-overlay">
+                          <h3>Toscane</h3>
+                          <p>The beautiful landscape</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Sydney" title="Sydney" src="img/bestemmingen/sydney.jpg">
+                      <div class="photo-overlay">
+                          <h3>Sydney</h3>
+                          <p>A land far, far, far away</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Oslo" title="Oslo" src="img/bestemmingen/Oslo.jpg">
+                      <div class="photo-overlay">
+                          <h3>Oslo</h3>
+                          <p>Winter wonderland</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo">
+                      <img class="bestemming" alt="Kopenhagen" title="Kopenhagen" src="img/bestemmingen/kopenhagen.jpg">
+                      <div class="photo-overlay">
+                          <h3>Kopenhagen</h3>
+                          <p>Northern lights</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          
+<!--    GALLERIJ-->
+        <h1 id="Gallerij" class="kopTekst klein">Gallery</h1>
+        <section class="three-d-container">
+                <input type="radio" checked class="three-d-bullet a" name="three-d">
+                <input type="radio" class="three-d-bullet b" name="three-d">
+                <input type="radio" class="three-d-bullet c" name="three-d">
+                <input type="radio" class="three-d-bullet d" name="three-d">
+                <input type="radio" class="three-d-bullet e" name="three-d">
+                <input type="radio" class="three-d-bullet f" name="three-d">
+			<div class="three-d-cube">
+				<figure class="three-d-item">
+					<img id="myImg" src="img/biking.jpg" title="biking" alt="I bike a lot whether it is about going to my friends, the gym or to my intership. I bike at least 10 times a week.">
+				</figure>
+				<figure class="three-d-item">
+					<img id="myImg2" src="img/gaming.jpg" title="gaming" alt="I game on a Playstation 4. Add me at: Nimlion. My favorite games: Assassins Creed, Rocket League and Grand Theft Auto.">
+				</figure>
+				<figure class="three-d-item">
+					<img id="myImg3" src="img/soccer.jpg" title="soccerfield" alt="I play a lot of soccer in the summer with my friends, I am really bad at it though...">
+				</figure>
+				<figure class="three-d-item">
+					<img id="myImg4" src="img/boat.jpg" title="boat" alt="In the summer I love a weekly boattrip with my friends.">
+				</figure>
+				<figure class="three-d-item">
+					<img id="myImg5" src="img/croissant.jpg" title="croissant" alt="I am crazy about croissants">
+				</figure>
+				<figure class="three-d-item">
+					<img id="myImg6" src="img/pasta.jpg" title="pasta" alt="I eat a lot of pasta, my favorite is with spinache.">
+				</figure>
+			</div>
+		</section>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+
+<!--
+                    <img class="front" src="img/biking.jpg" title="biking" alt="biking">
+                    <img class="back" src="img/gaming.jpg" title="gaming" alt="gaming">
+                    <img class="left" src="img/soccer.jpg" title="soccerfield" alt="soccer">
+                    <img class="right" src="img/boat.jpg" title="boat" alt="boat">
+                    <img class="front" src="img/cake.jpg" title="cake" alt="cake">
+                    <img class="back" src="img/croissant.jpg" title="croissant" alt="croissant">
+                    <img class="left" src="img/pasta.jpg" title="pasta" alt="pasta">
+                    <img class="right" src="img/chicken.jpg" title="chicken" alt="chicken">
+-->
+        
+<!--        SKILLS-->
+        <h1 id="Skills"class="kopTekst klein">Knowledge</h1>
+        <div class="skillsList">
+            <div class="flex-container">
+                <div class="flex-item"><div class="balk"><label for="html">CSS:</label><div id="bar"><div id="fill" title="90%"><p class="skillTekst om">90%</p></div></div></div></div>
+                <div class="flex-item"><div class="balk"><label for="html">Javascript:</label><div id="bar"><div id="fill" title="40%"><p class="skillTekst">40%</p></div></div></div></div>
+                <div class="flex-item"><div class="balk"><label for="html">HTML:</label><div id="bar"><div id="fill" title="100%"><p class="skillTekst om">100%</p></div></div></div></div>
+                <div class="flex-item"><div class="balk"><label for="html">PHP:</label><div id="bar"><div id="fill" title="30%"><p class="skillTekst">30%</p></div></div></div></div>
+                <div class="flex-item"><div class="balk"><label for="html">JQUERY:</label><div id="bar"><div id="fill" title="30%"><p class="skillTekst om">30%</p></div></div></div></div>
+                <div class="flex-item"><div class="balk"><label for="html">CSS:</label><div id="bar"><div id="fill" title="90%"><p class="skillTekst">90%</p></div></div></div></div> 
+            </div>
+            <div class="flex-container">
+                <div class="flex-item"><div class="balk"><label for="html">SVN:</label><div id="bar"><div id="fill" title="100%"><p class="skillTekst">&#10004;</p></div></div></div></div>
+                <div class="flex-item"><div class="balk"><label for="html">Laravel:</label><div id="bar"><div id="fill" title="10%"><p class="skillTekst om">10%</p></div></div></div></div>
+                <div class="flex-item"><div class="balk"><label for="html">Design:</label><div id="bar"><div id="fill" title="30%"><p class="skillTekst">30%</p></div></div></div></div>
+                <div class="flex-item"><div class="balk"><label for="html">Dutch:</label><div id="bar"><div id="fill" title="95%"><p class="skillTekst om">95%</p></div></div></div></div>
+                <div class="flex-item"><div class="balk"><label for="html">English:</label><div id="bar"><div id="fill" title="90%"><p class="skillTekst">90%</p></div></div></div></div>
+                <div class="flex-item"><div class="balk"><label for="html">Arabic:</label><div id="bar"><div id="fill" title="15%"><p class="skillTekst">15%</p></div></div></div></div>
+            </div>
+        </div>
+<!--        CONTACT-->
+        <div>
+            <h1 id="Contact" class="kopTekst klein">Contact</h1>
+            <h3 class="kopTekst kleiner">contact details:</h3>
+            <div class="infoList">
+                <div class="flex-container">
+                  <ul class="contactList">
+                      <li id="ninegag">Hosam Darwish</li>
+                      <li id="phone"><span  class="doubledLink"><a href="tel:0630318886">0630318886</a></span></li>
+                      <li id="email"><span  class="doubledLink"><a href="mailto:hd.006@hotmail.com">hd.006@hotmail.com</a></span></li>
+                  </ul>
+                </div>
+                <div class="flex-container">
+                  <ul class="contactList">
+                    <li id="noIcon">1422</li>
+                    <li id="location">Uithoorn</li>
+                    <li id="noIcon">The Netherlands</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <audio id="myAudio" src="inc/background.mp3" preload="auto"></audio>
+        <p id="Contact" class="footerText">
+            <i  onclick="playAudio(this)" class="fa fa-copyright" aria-hidden="true"></i><?php echo date("Y"); ?> -  Hosam Darwish 
+<!--
+            <a target="_blank" href="https://www.instagram.com/?hl=nl"><i class="fa fa-instagram"></i></a>
+            <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+-->
+            <a class="tabletUp" target="_blank" href="https://twitter.com/gamertweeter16"><i class="fa fa-twitter-square"></i></a>
+            <a class="tabletUp" target="_blank" href="https://www.youtube.com/channel/UCHtXqf99mHAh_sXEhGWDCyQ"><i class="fa fa-youtube-play"></i></a>
+            <i class="tabletUp" onclick="playAudio()" class="fa fa-play"></i>
+            <i class="tabletUp" onclick="pauseAudio()" class="fa fa-pause"></i>
+            <a class="tabletUp" href="inc/CV_Hosam_Darwish.pdf" download><span class="Download"><i class="fa fa-file-pdf-o"></i></span></a>
+        </p>
+    </div>
+    <div class="socialBar">
+        <span class="footerText">Socialmedia:
+        <a target="_blank" href="whatsapp://send?text=Hosam Darwish&phone=+31630318886"><i class="fa fa-whatsapp" ></i></a>
+        <a target="_blank" href="https://twitter.com/gamertweeter16"><i class="fa fa-twitter-square"></i></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCHtXqf99mHAh_sXEhGWDCyQ"><i class="fa fa-youtube-play"></i></a></span>
+    </div>
+    <a href="inc/CV_Hosam_Darwish.pdf" download><div class="downloadBar">
+        <span class="footerText"><i class="fa fa-download"></i>Download my CV</span>
+    </div></a>
+    <?php include 'inc/googlemap.php'; ?>
+    <script src="js/music.js"></script>
+    <script src="js/modal.js"></script>
+    
+  </body>
+</html>
